@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="text-center">
+    <h2>Создание обращения</h2>
+    <form method="POST" th:action="@{/main/create}" id="registration">
+        <div class="mb-3">
+            <label>
+                <input class="form-control" type="text" placeholder="Номер автомобиля" name="carNumber"/>
+            </label>
+        </div>
+        <div class="mb-3">
+            <label>
+                <textarea class="form-control" type="text" placeholder="Описание" name="description"></textarea>
+            </label>
+        </div>
+        <div class="mb-3">
+            <input type="submit" value="Зарегестрировать обращение" class="btn btn-primary"/>
+        </div>
+    </form>
+</div>
+
+
+
+</body>
+</html>

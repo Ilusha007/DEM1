@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>ваши заявления</h1>
+<div th:each="statement : ${statements}">
+
+    <p th:text="${statement.carNumber}"></p>
+    <p th:text="${statement.description}"></p>
+
+
+</div>
+<a class="btn btn-primary" th:href="@{/main/createForm}">Добавить обращение</a>
+
+</body>
+</html>
